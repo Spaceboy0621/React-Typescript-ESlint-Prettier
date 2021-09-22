@@ -21,6 +21,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
+        "tsc": "tsc",
         "lint": "eslint . --ext .ts,.tsx",
         "lint:fix": "eslint . --ext .ts,.tsx --fix",
         "format": "prettier --check \"./**/*.{ts,tsx,css,json}\"",
