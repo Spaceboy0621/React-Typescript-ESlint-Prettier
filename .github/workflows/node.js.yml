@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [14.17.6]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -28,4 +28,6 @@ jobs:
         cache: 'npm'
     - run: yarn install
     - run: yarn build
+    - run: yarn tsc
+    - run: yarn format
     - run: yarn lint
